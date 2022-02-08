@@ -1,0 +1,3 @@
+/*
+    Redux central store
+*/

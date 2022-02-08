@@ -1,0 +1,3 @@
+/*
+Placeholder component can be deleted
+*/
