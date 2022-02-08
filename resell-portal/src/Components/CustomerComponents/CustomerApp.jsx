@@ -1,0 +1,4 @@
+/*
+This is the entrypoint of customer components
+like App.js is entry point of whole app
+*/
