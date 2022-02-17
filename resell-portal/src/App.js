@@ -10,7 +10,7 @@ function App() {
     <Routes>
       <Route exact path="/auth" element={<Auth />} />
       <Route exact path="/admin" element={<AdminApp />} />
-      {/* <Route exact path="/shop" element={<CustomerApp />} /> */}
+      <Route exact path="/shop" element={<CustomerApp />} />
     </Routes>
   );
 }
