@@ -11,8 +11,18 @@ import {
 import { BsStar } from "react-icons/bs";
 import Shirt from "../../../../assets/images/Shirt.jpg";
 import "./ItemCards.css";
+import { Link } from "react-router-dom";
 
 export default class ItemCards extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      title: "Nylon Shirt",
+      price: 200,
+      rating: 4,
+      commentsCount: 3,
+    };
+  }
   render() {
     return (
       <div>
@@ -28,7 +38,9 @@ export default class ItemCards extends Component {
             </Card.Section>
 
             <Group position="apart" style={{ marginBottom: 1, marginTop: 1 }}>
-              <Text className="lead py-1">Nylon Shirt</Text>
+              <Link to={`/view/2`} state={this.state.title}>
+                <Text className="lead py-1">{this.state.title}</Text>
+              </Link>
               <Badge color="pink" variant="light">
                 On Sale
               </Badge>
